@@ -1,1 +1,19 @@
-เนื้อหาใหม่ทั้งหมดที่คุณต้องการใส่ลงในไฟล์
+_G.Settings_V4 = {
+    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
+        "JOE3_SS5VZ",
+        "JOE1_EQVOJ"
+    },
+    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
+        "JOE2_G7YNE1",
+        "JOE2_G7YNE2",
+        "JOE2_G7YNE3",
+        "JOE2_G7YNE4"
+    }
+}
+getgenv().Key = "MARU_V4-QMH7RW26X15PRO7"
+getgenv().id = "354662781859004417"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+            
