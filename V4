@@ -9,16 +9,16 @@ _G.Settings_V4 = {
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
         "JOE4_OHLVJ",
         "JOE7_LX3YI",
-        "JOE7_9AHOJ",
-        "JOE8_EZGR2",
-        "JOE9_STS1J",
+        "JOE8_D501S",
+        "JOE9_OW8YO",
+        "JOE6_2XHWF",
         "JOE6_HWJJJ",
-        "JOE5_CAFC3",
-        "JOE4_SIYTC",
-        "JOE7_WUPE0",
+        "JOE8_SSURE",
+        "JOE10_Y4ACE",
+        "JOE9_GSSWE",
         "JOE1_E3VOC",
-        "JOE4_L4KAG",
-        "JOE10_6Y6SY"
+        "JOE9_LBIIJ",
+        "JOE8_BT1FW"
     }
 }
 getgenv().Key = "MARU_V4-QMH7RW26X15PRO7"
