@@ -1,27 +1,27 @@
 _G.Settings_V4 = {
-                    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-                    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-                    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
-                    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
-                        "JOE3_SS5VZ",
-                        "JOE1_EQVOJ"
-                    },
-                    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-                        "JOE9_DA2GA",
-        "JOE6_582CH",
-        "JOE10_18UCR",
-        "JOE3_9EQXM",
-        "JOE6_EHDUF",
-        "JOE10_X9ROZ",
-        "JOE8_8GW2U",
-        "JOE10_MN2ZA",
-        "JOE6_8CKRL",
+["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
+        "JOE3_SS5VZ",
+        "JOE1_EQVOJ"
+    },
+    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
+        "JOE7_U0Y97",
+        "JOE10_TE1CE",
+        "JOE10_D6O7P",
+        "JOE10_H76M7",
+        "JOE6_LE5KN",
+        "JOE7_5B1I5",
+        "JOE8_1D5FC",
+        "JOE9_ZMWSU",
+        "JOE10_I7YQ6",
         "JOE1_E3VOC",
-        "JOE9_68JRD",
-        "JOE5_WKU0D"
-                    }
-                }
-                getgenv().Key = "MARU_V4-QMH7RW26X15PRO7"
-                getgenv().id = "354662781859004417"
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
-                            
+        "JOE9_QEY92",
+        "JOE9_IN41Y"
+    }
+}
+getgenv().Key = "MARU_V4-QMH7RW26X15PRO7"
+getgenv().id = "354662781859004417"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+            
