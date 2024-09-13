@@ -16,7 +16,7 @@ _G.Settings_V4 = {
         "JOE8_8GW2U",
         "JOE8_D501S",
         "JOE8_F07I8",
-        "JOE10_JNBKL"
+        "JOE5_ULTVG"
     }
 }
 getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
