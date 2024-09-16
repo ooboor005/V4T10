@@ -7,7 +7,7 @@ _G.Settings_V4 = {
         "JOE1_EQVOJ"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "JOE10_YNNQO",
+        "JOE9_QIR96",
         "JOE4_7TDFN",
         "JOE4_9WMRG",
         "JOE5_5KVPC",
@@ -22,3 +22,4 @@ _G.Settings_V4 = {
 getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
 getgenv().id = "969581952531316827"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+            
