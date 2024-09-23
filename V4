@@ -10,7 +10,7 @@ _G.Settings_V4 = {
         "JOE8_8CSGI",
         "JOE4_I3PMA",
         "JOE8_7RNK6",
-        "JOE4_AZHBM",
+        "JOE6_G3BE4",
         "JOE4_KMXMW",
         "JOE9_HO6F7",
         "JOE6_V3FWP",
@@ -24,3 +24,4 @@ _G.Settings_V4 = {
 getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
 getgenv().id = "969581952531316827"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+            
