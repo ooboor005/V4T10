@@ -1,3 +1,26 @@
-getgenv().Key = "MARU-R6JT-WVH7W-1BV1-MANKG-DHD3"
-getgenv().id = "354662781859004417"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+_G.Settings_V4 = {
+["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
+        "JOE3_SS5VZ",
+        "JOE1_EQVOJ"
+    },
+    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
+        "JOE8_8CSGI",
+        "JOE4_I3PMA",
+        "JOE8_7RNK6",
+        "JOE4_AZHBM",
+        "JOE4_KMXMW",
+        "JOE9_HO6F7",
+        "JOE6_V3FWP",
+        "JOE4_7ZJK8",
+        "JOE10_EB0HK",
+        "JOE4_N78LR",
+        "JOE8_68QUK",
+        "JOE7_R5I71"
+    }
+}
+getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
+getgenv().id = "969581952531316827"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
