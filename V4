@@ -1,25 +1,25 @@
-_G.Settings_V4 = {
-["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
-    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
-        "JOE3_SS5VZ",
-        "JOE1_EQVOJ"
+getgenv().Kusnokix = {
+    ["LockedRace"] = {
+        ["Enabled"] = true,
+        ["Rerace until fragments"] = 4000, 
+        ["Enable rerace until fragments"] = true, 
+        ["Race"] = {
+            "Skypiea",  
+        },
+        ["Reroll when evo"] = false, 
+        ["Teleport to island"] = true, 
+        ["PosTeleport"] = CFrame.new(100, 100,616),
+        ["Auto Find Fragments"] = true, 
+        ["Minimum Fragments"] = 30000, 
+        ["Helper Skypiea"] = {"JOE5_5SWYG"}, 
+        ["Helper Ghoul"] = {},
+        ["Helper Auto Enbale PVP"] = true,  
+        ["Helper Teleport to pos"] = true, 
     },
-    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "JOE3_0HVHZ",
-        "JOE8_7RNK6",
-        "JOE4_8L3XR",
-        "JOE6_G6251",
-        "JOE8_68QUK",
-        "JOE5_Y7QXP",
-        "JOE9_F6FA9",
-        "JOE9_IFHN8",
-        "JOE9_RPZUF",
-        "JOE4_I36SS"
-    }
+    ["Auto Evo Race"] = true, 
+   ["Fast Attack"] = {
+                ["Duration"] = 3,
+                ["Delay"] = 2,
+   }
 }
-getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
-getgenv().id = "969581952531316827"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
-            
+loadstring(game:HttpGet'https://raw.githubusercontent.com/NatNyt/Loader/refs/heads/main/kpio42mx89231x'){function (...) end, "03f1fb2f-490d-4b16-a07b-e952561e3d87", "old"}
