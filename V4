@@ -22,4 +22,3 @@ _G.Settings_V4 = {
 getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
 getgenv().id = "969581952531316827"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
-            
