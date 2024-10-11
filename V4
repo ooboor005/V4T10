@@ -1,3 +1,10 @@
+task.spawn(function()
+    wait(80)
+    if not game.CoreGui:FindFirstChild('NINONOOB') then
+        game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+    end
+end)
+
 getgenv().Kusnokix = {
     ["LockedRace"] = {
         ["Enabled"] = false,
