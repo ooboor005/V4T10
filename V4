@@ -1,20 +1,20 @@
 getgenv().Kusnokix = {
     ["LockedRace"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["Rerace until fragments"] = 4000, 
-        ["Enable rerace until fragments"] = false, 
+        ["Enable rerace until fragments"] = true, 
         ["Race"] = {
-            "Ghoul",  
+            "Ghoul", "Skypiea", 
         },
         ["Reroll when evo"] = false, 
-        ["Teleport to island"] = true, 
+        ["Teleport to island"] = false, 
         ["PosTeleport"] = CFrame.new(100, 100,616),
         ["Auto Find Fragments"] = true, 
         ["Minimum Fragments"] = 30000, 
         ["Helper Skypiea"] = {}, 
         ["Helper Ghoul"] = {'JOE7_2BMVW'},
-        ["Helper Auto Enbale PVP"] = true,  
-        ["Helper Teleport to pos"] = true, 
+        ["Helper Auto Enbale PVP"] = false,  
+        ["Helper Teleport to pos"] = false, 
     },
     ["Auto Evo Race"] = true, 
    ["Fast Attack"] = {
