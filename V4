@@ -22,3 +22,4 @@ getgenv().Kusnokix = {
                 ["Delay"] = .2,
    }
 }
+loadstring(game:HttpGet'https://raw.githubusercontent.com/NatNyt/Loader/refs/heads/main/kpio42mx89231x'){function (...) end, "03f1fb2f-490d-4b16-a07b-e952561e3d87", "old"}
