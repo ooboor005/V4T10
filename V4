@@ -7,11 +7,11 @@ _G.Settings_V4 = {
         "JOE3_SS5VZ"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "JOE10_HWMFJ",
+        "JOE10_TLMR4",
         "JOE10_L1IM0",
         "JOE10_HT58B",
-        "JOE10_CMF0Y",
-        "JOE4_OTHXK",
+        "JOE10_RWA2Q",
+        "JOE10_UV72Q",
         "JOE5_N5ALE",
         "JOE10_DJLKE",
         "JOE10_LVTID",
