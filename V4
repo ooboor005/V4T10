@@ -1,24 +1,25 @@
 _G.Settings_V4 = {
-    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
     ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
         "JOE1_EQVOJ",
         "JOE3_SS5VZ"
     },
-    ["V4FarmList"] = { 
-        "JOE6_430K9",
-        "JOE7_LCUIF",
-        "JOE_6423TO5XVQ",
-        "JOE7_DHPD4",
+    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
+        "JOE8_EQRFS",
+        "JOE6_O19SV",
+        "JOE8_H8MEW",
+        "JOE9_AA46G",
         "JOE7_D3OBO",
-        "JOE5_N4A9N",
+        "JOE9_19LKT",
         "JOE10_H8JHA",
-        "JOE6_71LSO",
-        "JOE6_2PGHN",
+        "JOE7_YKP3R",
+        "JOE7_A3WSN",
         "JOE7_U8I92"
     }
 }
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
 getgenv().id = "354662781859004417"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+            
