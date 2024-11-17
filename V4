@@ -1,3 +1,55 @@
+repeat
+    task.wait()
+until game:IsLoaded()
+if game:GetService("Players").LocalPlayer.PlayerGui.Main:FindFirstChild("ChooseTeam") then
+    local Executor = identifyexecutor()
+    if Executor == "Delta" then 
+        function click(a)
+            game:GetService("VirtualInputManager"):SendMouseButtonEvent(a.AbsolutePosition.X+a.AbsoluteSize.X/2,a.AbsolutePosition.Y+90,0,true,a,1)
+            game:GetService("VirtualInputManager"):SendMouseButtonEvent(a.AbsolutePosition.X+a.AbsoluteSize.X/2,a.AbsolutePosition.Y+90,0,false,a,1)
+        end
+        if  game.Players.LocalPlayer.Team == nil or game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").ChooseTeam.Visible then
+            repeat task.wait()
+                if _G.Team == nil then
+                    _G.Team = "Pirates"
+                end
+                if game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container:FindFirstChild(_G.Team) == nil then
+                    _G.Team = "Pirates"
+                end
+                click(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container[_G.Team].Frame.TextButton)
+            until game.Players.LocalPlayer.Team ~= nil
+        end
+    else 
+        repeat task.wait()
+            if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").ChooseTeam.Visible == true then
+                for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container["Pirates"].Frame.TextButton.Activated)) do
+                    for a, b in pairs(getconnections(game:GetService("UserInputService").TouchTapInWorld)) do
+                        b:Fire() 
+                    end
+                    v.Function()
+                end 
+            end
+        until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
+    end
+end
+
+function SwitchSword()
+    local Inventory = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventory")
+    local Sword = nil
+    for i,v in pairs(Inventory) do
+        if v["Name"] == "Saber" then
+            Sword = "Saber"
+        elseif v["Name"] == "Cursed Dual Katana" and Sword == nil then
+            Sword = "Cursed Dual Katana"
+        end
+    end
+    if Sword ~= nil then
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("LoadItem",tostring(Sword))
+    end
+end
+
+SwitchSword()
+
 getgenv().Kusnokix = {
     ["LockedRace"] = {
         ["Enabled"] = true,
