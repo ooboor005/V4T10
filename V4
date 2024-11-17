@@ -69,7 +69,7 @@ getgenv().Kusnokix = {
         ["Helper Ghoul"] = {"JOE9_J17WZ"},
         ["Helper Auto Enbale PVP"] = true,
         ["Helper Teleport to pos"] = true,
-        ["AutoFindPlayer"] = true
+        ["AutoFindPlayer"] = false
     },
     ["Auto Evo Race"] = true,
     ["Fast Attack"] = {
