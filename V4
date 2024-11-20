@@ -1,7 +1,7 @@
 local HttpService = game:GetService("HttpService")
 local Workspace = game:GetService("Workspace")
 local DoorStatus = false
-getgenv().Key = "MARU-157L3-ANC5-XCEOG-267H-X6O3A"
+getgenv().Key = "MARU-01KQU-JRBD-DCOYT-S530-FQEC3"
 getgenv().id = "354662781859004417"
 local MaruHubConfig = {
     InstanceStats = false,
