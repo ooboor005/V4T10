@@ -65,7 +65,7 @@ getgenv().Kusnokix = {
         ["Minimum Fragments"] = 30000,
         ["Helper Skypiea"] = {
         },
-        ["Helper Ghoul"] = {"JOE9_J17WZ"},
+        ["Helper Ghoul"] = {"JOE7_INF78"},
         ["Helper Auto Enbale PVP"] = true,
         ["Helper Teleport to pos"] = true,
         ["AutoFindPlayer"] = false
