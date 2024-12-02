@@ -77,7 +77,7 @@ local MaruhubConfig = {
     ByPassTP = false,
     AutoRainbowHaki = false,
     PlayersESP = false,
-    AutoRaceCyborg = true,
+    AutoRaceCyborg = false,
     FovSize = 350,
     AimbotSkill = false,
     AutoFinishTrail = false,
@@ -267,12 +267,7 @@ writefile("Maru Hub Premium Scripts/Blox_Fruits-" .. game.Players.LocalPlayer.Na
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
 repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Team ~= nil
-local plr = game.Players.LocalPlayer
-local placeid = game.PlaceId
 
-while true do task.wait()
-    repeat task.wait()
-        game:GetService("ReplicatedStorage").Remotes:FindFirstChild("CommF_"):InvokeServer("TravelDressrosa")
-        task.wait(1)
-    until placeid == 4442272183
+if game.PlaceId ~= 7449423635 then
+    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
 end
