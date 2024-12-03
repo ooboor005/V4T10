@@ -58,7 +58,7 @@ getgenv().Kusnokix = {
         ["Race"] = {
             "Cyborg"
         },
-        ["Reroll when evo"] = false,
+        ["Reroll when evo"] = true,
         ["Teleport to island"] = true,
         ["PosTeleport"] = CFrame.new(100, 100, 616),
         ["Auto Find Fragments"] = true,
