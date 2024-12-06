@@ -10,13 +10,13 @@ _G.Settings_V4 = {
         "JOE10_RLFMU",
         "JOE10_VTDXH",
         "JOE10_VCNLQ",
-        "JOE10_DK2PI",
+        "JOE_3B3K73L7VT",
         "JOE12_2VTV",
         "JOE10_RWCXF",
-        "JOE1_E3VOC",
         "JOE10_L80GL",
         "JOE_2R5BC2XH28",
-        "JOE_2HAVTM9BOA"
+        "JOE_2HAVTM9BOA",
+        "JOE4_18Z7P"
     }
 }
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
