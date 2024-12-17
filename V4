@@ -1,160 +1,150 @@
-local HttpService = game:GetService("HttpService")
-local Workspace = game:GetService("Workspace")
-local DoorStatus = false
-
-local MaruHubConfig = {
-    InstanceStats = false,
-    AutoBuyFruitsAdvanceStock = false,
-    AutoClick = false,
-    FastAttack = true,
-    SemiNoBusyCharacter = false,
-    AutoHallowScythe = false,
-    AutoFarmChests = false,
-    SemiNoClip = false,
-    EnabledFactoryFarm = false,
-    EnabledResetCharacter = false,
-    AutoFarmSeaEvents = false,
-    EnabledDriveBoats = false,
-    AutoAwakenerFruits = false,
-    AutoSharkmanKarate = false,
-    HopUntilFoundGodChalice = false,
-    AutoRandomFruits = false,
-    AutoTrident = false,
-    LimitValues = false,
-    ByPassTP = false,
-    AutoRainbowHaki = false,
-    PlayersESP = false,
-    AutoRaceCyborg = false,
-    FovSize = 350,
-    AimbotSkill = false,
-    AutoFinishTrail = false,
-    EnabledFullBright = false,
-    Fly = false,
-    AutoFarmSeaBeasts = false,
-    LimitAmount = 1,
-    EnabledSpawnCakePrince = false,
-    EnabledRiskModeChests = false,
-    EnabledBuyLegendarySwordHOP = false,
-    Version = "MARUNEWUIBF20NEWUI",
-    AutoFindFullMoon = false,
-    AutoObservationv2 = false,
-    SelectIgnore = {},
-    AutoFarmPlayer = false,
-    AutoFarmBoneMasteryFruits = false,
-    SelectWeapon = "Melee",
-    AutoElectricClaw = false,
-    AutoFarmBone = false,
-    AutoCakePrince = false,
-    AutoFarmLevel = true,
-    EnabledMysitcIslandHOP = false,
-    BoneSurprise = false,
-    EnabledHOPFindFruits = false,
-    AutoWhiteScreen = false,
-    RTXMode = false,
-    SelectDungeons = "",
-    PointsUP = 1,
-    AutoCollectPresent = false,
-    SelectHost = "",
-    AutoActiveHelper = false,
-    SkillDelayV = 1,
-    AutoFarmEctoplasm = false,
-    EnabledZouQuests = false,
-    EnabledBuyOrderBossChip = false,
-    AutoValkyrie = false,
-    AutoBuyLegendarySword = false,
-    EnabledFullMoonHOP = false,
-    SelectSeaZones = "",
-    EnabledUnstoreFruits = false,
-    AutoTushita = false,
-    AutoPullLever = false,
-    AutoWarriorHelmet = false,
-    SelectMethodSword = "",
-    AutoBuyFruits = false,
-    AutoAncientOneQuest = false,
-    DisabledCanCanCollideBoat = false,
-    IgnoreMonsters = {},
-    SaveEmuChange = false,
-    AutoCraftSharkAnchor = false,
-    AutoEvoRacev2 = false,
-    JobId = "",
-    AutoFarmCakePiratesMasteryFruits = false,
-    AutoFarmMirrorFractral = false,
-    AutoFindAdvanceFruitsDealer = false,
-    EnabledChestsHOP = false,
-    EnabledDriveBoatsShip = false,
-    AutoFarmAllSwordMastery = false,
-    AutoFarmDarkFragments = false,
-    AutoRengoku = false,
-    AutoCollectAzureEmber = false,
-    DistanceX = 5,
-    SelectStats = {},
-    KillAtForMastery = 30,
-    AutoFarmBoneMasteryGun = false,
-    AutoRaceGhoul = false,
-    AutoFarmGunMastery = false,
-    SelectSkills = {"Z", "X", "C"},
-    AutoFarmFruitsMastery = false,
-    FruitCost = 1000000,
-    SpeedBoat = 250,
-    EnabledRaceTransformed = false,
-    SelectMaterials = {},
-    WhiteScreen = false,
-    SafeMode = false,
-    AutoMidnightBlade = false,
-    ImageKaitun = "",
-    SelectEnchancementsColor = {},
-    AutoMusketeer = false,
-    GearESP = false,
-    SelectGears = "",
-    AutoFarmCakePiratesMasteryGun = false,
-    EnabledHOPServerItems = false,
-    AutoPressW = false,
-    SkillDelayX = 1,
-    EnabledFarmBountyHOP = false,
-    AutoFarmGhostShip = false,
-    MasterofAurasESP = false,
-    SelectBoats = "",
-    AutoCameraToMoon = false,
-    AutoFindMysticIsland = false,
-    EnabledFarmSeaBeastsHOP = false,
-    EnabledAcceptQuests = false,
-    SelectCombat = "",
-    PryBone = false,
-    AutoDeathStep = false,
-    AutoFinishDoughAwaken = false,
-    SelectBosses = {},
-    DistanceY = 28,
-    MaxDisc = 2500,
-    AutoSuperhuman = false,
-    SelectLimit = "",
-    AutoYama = false,
-    AutoGodhuman = false,
-    DontShowEmuChange = false,
-    AutoFarmBosses = false,
-    AutoFinishQuestsYama = false,
-    EnabledBringFruits = false,
-    DriveForWard = false,
-    SpawmJoin = false,
-    EnabledTweenToRaceDoors = false,
-    AutoBuddy_Sword = false,
-    AutoCavander = false,
-    AutoFinishQuestsTushita = false,
-    AimbotMethod = "",
-    SelectIsland = "",
-    SpectatePlayers = false,
-    EnabledBuyChips = false,
-    EnabledHOPEliteHunter = false,
-    NoCooldownAbilities = false,
-    EnabledUsingBoat = false,
-}
-
-
-if not isfolder("Maru Hub Premium Scripts") then
-    makefolder("Maru Hub Premium Scripts")
+if game:GetService("Players").LocalPlayer.PlayerGui["Main (minimal)"].ChooseTeam then
+    print("true")
+    repeat
+        task.wait()
+        local chooseTeamGui = game:GetService("Players").LocalPlayer.PlayerGui["Main (minimal)"].ChooseTeam
+        
+        -- ตรวจสอบว่า GUI ChooseTeam ปรากฏอยู่หรือไม่
+        if chooseTeamGui.Visible then
+            for _, v in pairs(getconnections(chooseTeamGui.Container.Pirates.Frame.TextButton.Activated)) do
+                pcall(function()
+                    v.Function()
+                end)
+            end
+        end
+    -- ทำซ้ำจนกว่า Player จะมีทีมและเกมโหลดเสร็จ
+    until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
 end
 
-writefile("Maru Hub Premium Scripts/Fisch-" .. game.Players.LocalPlayer.Name .. ".json", HttpService:JSONEncode(MaruHubConfig));
+task.spawn(function()
+    wait(60)
+    if not game.CoreGui:FindFirstChild('NINONOOB') then
+        game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+    end
+end)
 
-getgenv().Key = "MARU-8AWK-PNL0G-HAKI-CPFL3-C4D5"
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+
+_G.Team = "Pirate" -- Marine / Pirate
+getgenv().Script_Mode = "Kaitun_Script"
+
+_G.WebHook = {
+    ["Enabled"] = true, -- เปิดการใช้งาน
+    ["Url"] = "", -- ลิ้งค์เว็บฮุก
+    ["Delay"] = 60 -- วินาที
+}
+
+_G.MainSettings = {
+        ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
+        ['FPSBOOST'] = true, -- ภาพกาก
+        ["FPSLOCKAMOUNT"] = 60, -- จำนวน FPS
+        ['WhiteScreen'] = false, -- จอขาว
+        ['CloseUI'] = true, -- ปิด Ui
+        ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
+        ['AFKCheck'] = 150, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
+        ["LockFragments"] = 20000, -- ล็อคเงินม่วง
+        ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
+            [1] = "Dough-Dough",
+            [2] = "Dragon-Dragon",
+            [3] = "Leopard-Leopard",
+            [4] = "Mammoth-Mammoth",
+            [5] = "Kitsune-Ribbon",
+            [6] = "Buddha-Buddha",
+            [7] = "Portal-Portal",
+            [8] = "T-Rex-T-Rex",
+            [9] = "Shadow-Shadow",
+            [10] = "Venom-Venom",
+            [11] = "Control-Control",
+            [12] = "Spirit-Spirit"
+        }
+    }
+
+_G.Fruits_Settings = { -- ตั้งค่าผล
+    ['Main_Fruits'] = {}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
+    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Magma-Magma", "Light-Light", "Dark-Dark"} -- กินหรือซื้อตอนไม่มีผล
+}
+
+_G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
+    ['Rainbow_Haki'] = true,
+    ["MusketeerHat"] = true,
+    ["PullLever"] = true,
+    ['DoughQuests_Mirror'] = {
+        ['Enabled'] = true,
+        ['UseFruits'] = true
+    }        
+}
+
+_G.Races_Settings = { -- ตั้งค่าเผ่า
+    ['Race'] = {
+        ['EnabledEvo'] = false,
+        ["v2"] = True,
+        ["v3"] = True,
+        ["Races_Lock"] = {
+            ["Races"] = { -- Select Races U want
+                ["Mink"] = false,
+                ["Human"] = false,
+                ["Fishman"] = True
+            },
+            ["RerollsWhenFragments"] = 200000 -- Random Races When Your Fragments is >= Settings
+        }
+    }
+}
+
+_G.Settings_Melee = { -- หมัดที่จะทำ
+    ['Superhuman'] = true,
+    ['DeathStep'] = true,
+    ['SharkmanKarate'] = true,
+    ['ElectricClaw'] = true,
+    ['DragonTalon'] = true,
+    ['Godhuman'] = true
+}
+
+_G.FarmMastery_Settings = {
+    ['Melee'] = true,
+    ['Sword'] = true,
+    ['DevilFruits'] = true,
+    ['Select_Swords'] = {
+        ["AutoSettings"] = false, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
+        ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
+            "Cursed Dual Katana",
+            "Shark Anchor",
+            "Tushita",
+            "Yama",
+            "HallowScryte"
+        }
+    }
+}
+
+_G.SwordSettings = { -- ดาบที่จะทำ
+    ['Saber'] = false,
+    ["Pole"] = false,
+    ['MidnightBlade'] = false,
+    ['Shisui'] = false,
+    ['Saddi'] = false,
+    ['Wando'] = false,
+    ['Yama'] = true,
+    ['Rengoku'] = false,
+    ['Canvander'] = false,
+    ['BuddySword'] = false,
+    ['TwinHooks'] = false,
+    ['HallowScryte'] = true,
+    ['TrueTripleKatana'] = false,
+    ['SharkAnchor'] = true,
+    ['CursedDualKatana'] = true
+}
+_G.SharkAnchor_Settings = {
+    ["Enabled_Farm"] =true,
+}
+_G.GunSettings = { -- ปืนที่จะทำ
+    ['Kabucha'] = false,
+    ['SerpentBow'] = false,
+    ['SoulGuitar'] = false
+}
+_G.SkillC = true --ปิดสกิว C
+getgenv().Key = "MARU-01KQU-JRBD-DCOYT-S530-FQEC3"
 getgenv().id = "354662781859004417"
+getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
