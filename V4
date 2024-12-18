@@ -7,7 +7,7 @@ end)
 
 getgenv().Configuration = {
     ['Auto Farm Level'] = true,
-    ['Kaitun Stats'] = true,
+    ['Kaitun Stats'] = false,
     ['Black Screen Optimizer'] = true,
     }
 
