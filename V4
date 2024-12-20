@@ -1,17 +1,19 @@
 local HttpService = game:GetService("HttpService")
-getgenv().Key = "MARU-VWVI-ET16W-DYJ7-97NJB-K6BV"
+getgenv().Key = "MARU-8AWK-PNL0G-HAKI-CPFL3-C4D5"
 getgenv().id = "354662781859004417"
 
 repeat
     task.wait()
 until game:IsLoaded()
 
-while true do task.wait()
-    repeat task.wait()
-        game:GetService("ReplicatedStorage").Remotes:FindFirstChild("CommF_"):InvokeServer("TravelDressrosa")
-        task.wait(1)
-    until placeid == 4442272183
-end
+local Private_Server = game:GetService('RobloxReplicatedStorage').GetServerType:InvokeServer()
+task.spawn(function()
+    if Private_Server == "StandardServer" then
+        game:GetService("Players").LocalPlayer:Kick("Private Server Not Detected");
+        task.wait(3)
+        game:Shutdown()
+    end
+end)
 
 function SwitchSword()
     local Inventory = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventory")
@@ -60,7 +62,7 @@ local MaruhubConfig = {
     AutoCollectBlazeEmber = false,
     AutoFarmSeaBeasts = false,
     LimitAmount = 1,
-    EnabledSpawnCakePrince = true,
+    EnabledSpawnCakePrince = false,
     EnabledRiskModeChests = false,
     EnabledBuyLegendarySwordHOP = false,
     Version = "MARUNEWUIBF20NEWUI",
@@ -72,7 +74,7 @@ local MaruhubConfig = {
     AutoPole = false,
     AutoElectricClaw = false,
     AutoFarmBone = false,
-    AutoCakePrince = true,
+    AutoCakePrince = false,
     SkillDelayX = 1,
     AutoCollectDragonEggs = false,
     AutoFinishQuestsTushita = false,
@@ -171,7 +173,7 @@ local MaruhubConfig = {
     AutoCavander = false,
     AutoStats = false,
     AimbotGun = false,
-    SelectIsland = "",
+    SelectIsland = "Green Zone",
     AimbotMethod = "",
     EnabledBuyChips = false,
     EnabledUsingBoat = false,
@@ -180,7 +182,7 @@ local MaruhubConfig = {
     TryluckBone = false,
     EnabledFovAimbot = false,
     AutoFinishPhoenixAwaken = false,
-    DisabledDamageText = false,
+    DisabledDamageText = true,
     SelectPlayer = "",
     EnabledKillAura = false,
     SelectSkills = {"Z", "X", "C"},
@@ -196,7 +198,7 @@ local MaruhubConfig = {
     AutoEliteHunter = false,
     AutoDragonTalon = false,
     EnabledCursedChests = false,
-    AutoEvoRacev3 = false,
+    AutoEvoRacev3 = true,
     AutoFinishQuestsYama = false,
     AutoStoredFruits = false,
     AutoCollectBerries = false,
@@ -230,7 +232,7 @@ local MaruhubConfig = {
     FruitsESP = false,
     DamageAura = false,
     SelectStats = {},
-    EnabledPvP = false,
+    EnabledPvP = true,
     EnabledTradeWithSpy = false,
     SelectWeapon = "Melee",
     EnabledMysitcIslandHOP = false,
@@ -246,3 +248,10 @@ if not isfolder("Maru Hub Premium Scripts") then
 end
 writefile("Maru Hub Premium Scripts/Blox_Fruits-" .. game.Players.LocalPlayer.Name ..".json", HttpService:JSONEncode(MaruhubConfig))
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
+while true do task.wait()
+    repeat task.wait()
+        game:GetService("ReplicatedStorage").Remotes:FindFirstChild("CommF_"):InvokeServer("TravelDressrosa")
+        task.wait(1)
+    until placeid == 4442272183
+end
