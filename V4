@@ -2,9 +2,9 @@ getgenv().Configuration = {
     ['Auto Farm Level'] = true,
     ['Kaitun Stats'] = true,
     ['Black Screen Optimizer'] = true,
-    ['Sniper Enabled] = true,
-    ['Main Fruits'] = {"Flame-Flame", "Ice-Ice", "Magma-Magma", "Light-Light", "Dark-Dark"}
-    ['Secondary Fruits'] = {"Kitsune-Ribbon"}
+    ['Sniper Enabled'] = true,
+    ['Main Fruits'] = {"Flame-Flame", "Ice-Ice", "Magma-Magma", "Light-Light", "Dark-Dark","Dough-Dough"},
+    ['Secondary Fruits'] = {"Dough-Dough","Dragon-Dragon","Leopard-Leopard","Mammoth-Mammoth","Kitsune-Ribbon","Buddha-Buddha","Portal-Portal","T-Rex-T-Rex","Shadow-Shadow","Venom-Venom","Control-Control","Spirit-Spirit"}
     }
 
 getgenv().key = 'bedaa37e-d861-4b60-8966-ae3d47512846'
