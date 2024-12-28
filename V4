@@ -3,23 +3,14 @@ _G.Settings_V4 = {
 ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
 ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
     ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
-        "JOE72_1U0F",
-        "JOE3_SS5VZ"
+        "JOE4_5MCM5",
+        "B"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "JOE4_65O13",
-        "JOE8_TGTNN",
-        "Glint_58l2MK",
-        "JOE_V93PC4VA5K",
-        "JOE9_6NLPX",
-        "JOE10_DK2PI",
-        "JOE90_E19W",
-        "JOE6_1K8CZ",
-        "JOE6_IT7ZV",
-        "JOE7_1PUFO"
+        "JOE6_8NZ5R"
     }
 }
-getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
+getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
 getgenv().id = "354662781859004417"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
             
