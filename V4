@@ -1,25 +1,48 @@
 _G.Settings_V4 = {
-["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
     ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
         "Rush_JQhUfn",
         "JOE9_B9AUS"
     },
-    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "JOE91_KH9G",
-        "Storm_pD863w",
-        "Storm_rUtWf0",
-        "Zen_1ivN4S",
-        "Rush_pybLPI",
-        "Loom_ye2mQe",
-        "Bolt_yR6Bti",
-        "Vibe_gYyRKs",
-        "Bolt_tS6hBX",
-        "Chill_ZaYMCt"
+    ["V4FarmList"] = { -- รายการสำหรับ V4FarmList
+        "Dawn_ZRACWG",
+        "Hope_7jpY5E",
+        "JOE1_E3VOC",
+        "JOE7_XH8QN",
+        "Storm_Q18l6u",
+        "Vail_30NwKc",
+        "Moss_X3dNHf",
+        "Gear_F8cbga",
+        "Stone_6gvmiJ",
+        "Volt_d2qvTB",
+        "Zen_DeAmzL",
+        "Vibe_PyNXUR",
+        "Peak_y5WrHj",
+        "Stone_tEpV8w",
+        "Flare_e4H2O4",
+        "Rush_3Ya1xY",
+        "Clash_wX7CSg",
+        "Rock_EFdtC6",
+        "Chill_1CxkyY",
+        "Void_oXCbUY",
+        "Bear_7dUYds",
+        "Vibe_VSq0J3",
+        "Vibe_BP94g2",
+        "Frost_NBhasJ",
+        "Grim_KudyJN",
+        "Chill_T6LYx5",
+        "Volt_itjRDK",
+        "Flare_XIjeu1",
+        "Gale_4QZUbl",
+        "Volt_zRcSTk",
+        "Dash_iuRoVs",
+        "Fawn_FiWCkq",
+        "Drift_24via6",
+        "Pear_DY4VPn"
     }
 }
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
 getgenv().id = "354662781859004417"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
-            
