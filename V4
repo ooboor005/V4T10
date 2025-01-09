@@ -53,6 +53,12 @@ _G.Settings_V4 = {
         "Vibe_v9fxdn",
         "Drift_5BeUwI",
         "Vibe_3RpTsv"
+        -- เพิ่มใหม่จากรายการที่ให้มา
+        "Vine_BAemei",
+        "Ace_p0WWMj",
+        "Wisp_47CWjt",
+        "Vibe_f9ssKr",
+        "Rush_c7X8CZ"
     }
 }
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
