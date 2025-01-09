@@ -40,7 +40,19 @@ _G.Settings_V4 = {
         "Dash_iuRoVs",
         "Fawn_FiWCkq",
         "Drift_24via6",
-        "Pear_DY4VPn"
+        "Pear_DY4VPn",
+        -- เพิ่มใหม่จากรายการที่ให้มา
+        "Soul_Mr3ZUF",
+        "Shade_GnzAmG",
+        "Zest_geAtiC",
+        "Bolt_1KZBOd",
+        "Rust_eJwh4p",
+        "Rush_1bSPS1",
+        "Volt_7BgFhH",
+        "Vibe_XjcaX8",
+        "Vibe_v9fxdn",
+        "Drift_5BeUwI",
+        "Vibe_3RpTsv"
     }
 }
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
