@@ -57,7 +57,10 @@ _G.Settings_V4 = {
         "Ace_p0WWMj",
         "Wisp_47CWjt",
         "Vibe_f9ssKr",
-        "Rush_c7X8CZ"
+        "Rush_c7X8CZ",
+        "Nest_yw8tSH",
+        "Spin_BlDY4z",
+        "Volt_TOgcDD"
     }
 }
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
