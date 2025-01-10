@@ -3,11 +3,12 @@ _G.Settings_V4 = {
 ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
 ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
     ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
-        "JOE_Z5O61",
-        "Dash_CTqsvy"
+        "JOE3_6PS5Z",
+        "JOE_Z5O61"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "Rush_JQhUfn",
+        "Dash_CTqsvy",
+        "Volt_itjRDK",
         "Moss_nKfRye",
         "Vibe_BP94g2",
         "Vail_0XH97F",
