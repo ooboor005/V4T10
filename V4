@@ -7,7 +7,7 @@ _G.Settings_V4 = {
         "Dash_CTqsvy"
     },
     ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "Glint_IUe8Ko",
+        "Vine_QVF9FW",
         "Volt_itjRDK",
         "Zest_geAtiC",
         "Bolt_1KZBOd",
@@ -19,7 +19,7 @@ _G.Settings_V4 = {
         "Griff_u4oBIw"
     }
 }
-getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
+getgenv().Key = "MARU_V4-DF2IBN2ZAH4GW85"
 getgenv().id = "354662781859004417"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
             
