@@ -1,26 +1,42 @@
 _G.Settings_V4 = {
-["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
     ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
         "JOE3_6PS5Z",
         "JOE_Z5O61"
     },
-    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "Dash_CTqsvy",
-        "Volt_itjRDK",
-        "Bolt_1KZBOd",
-        "Vibe_BP94g2",
-        "JOE8_CIH6R",
-        "Reed_I4MvOE",
-        "Stone_tEpV8w",
-        "Zest_geAtiC",
-        "JOE8_LP5N7",
-        "Rush_1bSPS1",
-        "Glint_IUe8Ko"
+    ["V4FarmList"] = { --         
+        "Blaze_rTTUvn",
+        "Clash_KvQaUU",
+        "Rush_uRuSRv",
+        "Wisp_47CWjt",
+        "Tide_t2GzuW",
+        "Eagle_uMkIJS",
+        "Haze_6LMoQ2",
+        "Spin_WKCpl6",
+        "Tusk_RwoINr",
+        "Swift_bKXZ3n",
+        "Flint_y9yZgD",
+        "Fire_igtJ97",
+        "Storm_JpvtXN",
+        "Mire_Lt3kJQ",
+        "Shade_CcAPUt",
+        "Dash_dvCTwL",
+        "Vine_QVF9FW",
+        "Flame_eO8kQ5",
+        "Fawn_IFXTNY",
+        "Volt_0iFQv9",
+        "Glow_JYnDXS",
+        "Rays_h44ciG",
+        "Dash_k4Xm17",
+        "Vail_40TYQn",
+        "Gear_mCH7V5",
+        "Haze_O9HcEJ",
+        "Glow_Sf45o0"
     }
 }
+
 getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
 getgenv().id = "354662781859004417"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
-            
