@@ -1,31 +1,45 @@
-getgenv().Configuration = {
-        Enabled = true,
-        ZoneFish = {
-            ['Zone'] = 'Forsaken Shores Pond', -- // สามารถเลือกได้ตาม [Fish Zone] ด้านบน
-            ['Event Zone Fishing'] = true, -- // เปิด / ปิด ตกปลาในโซนอีเว้น
-            ['Select Event Zones'] = {"Whale Shark","Isonade","Great White Shark","Moon Pool","Great Hammerhead Shark","The Depths - Serpent","Megalodon Ancient","Megalodon Default"}, -- // สามารถเลือกได้ตาม [Event Zone] ด้านบน
-        },
-        CollectMeteor = false,  
-        EquipRod = 'Rod Of The Depths', -- // สามารถเลือกได้ตาม [Rods] ด้านบน แนะนําตั่งเป็น Auto นี้แหละดีแล้ว
-        Rods = {
-            ['Trident Rod'] = true,
-            ['Aurora Rod'] = true,
-            ['Kings Rod'] = true,
-            ['Sunken Rod'] = true,
-            ['Mythical Rod'] = true, 
-            ['Rod Of The Depths'] = true,
-            ['Destiny Rod'] = true,
-        },
-        AutoSell = {
-            ['Enabled'] = true,
-            ['Sell every'] = 200, -- seconds
-            ['Mythical'] = true,
-            ['Legendary'] = true,
-            ['Enchant Rellcs'] = false,
-            ['Exotic'] = true,
-            ['Event Fish'] = true,
-            ['Limited Fish'] = true,
-        },
+_G.Settings_V4 = {
+    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
+        "JOE_Z5O61",
+        "Dash_CTqsvy"
+    },
+    ["V4FarmList"] = { -- เพิ่มข้อมูลที่นี่
+        "Blaze_rTTUvn",
+        "Clash_KvQaUU",
+        "Rush_uRuSRv",
+        "Wisp_47CWjt",
+        "Tide_t2GzuW",
+        "Eagle_uMkIJS",
+        "Haze_6LMoQ2",
+        "Spin_WKCpl6",
+        "Tusk_RwoINr",
+        "Swift_bKXZ3n",
+        "Flint_y9yZgD",
+        "Fire_igtJ97",
+        "Storm_JpvtXN",
+        "Mire_Lt3kJQ",
+        "Shade_CcAPUt",
+        "Dash_dvCTwL",
+        "Vine_QVF9FW",
+        "Flame_eO8kQ5",
+        "Fawn_IFXTNY",
+        "Volt_0iFQv9",
+        "Glow_JYnDXS",
+        "Rays_h44ciG",
+        "Dash_k4Xm17",
+        "Vail_40TYQn",
+        "Gear_mCH7V5",
+        "Haze_O9HcEJ",
+        "Glow_Sf45o0",
+        "Whale_GX3WMy",
+        "Grim_e5jHHN",
+        "Vibe_GhiXDG",
+        "Griff_u4oBIw"
     }
-getgenv().key = 'bedaa37e-d861-4b60-8966-ae3d47512846'
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenon-Trash/Loader/main/Loader.lua'))()
+}
+getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
+getgenv().id = "354662781859004417"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
