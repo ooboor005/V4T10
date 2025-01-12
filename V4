@@ -1,20 +1,30 @@
-if game:GetService("Players").LocalPlayer.PlayerGui["Main (minimal)"].ChooseTeam then
-    print("true")
-    repeat
-        task.wait()
-        local chooseTeamGui = game:GetService("Players").LocalPlayer.PlayerGui["Main (minimal)"].ChooseTeam
- 
-        -- ตรวจสอบว่า GUI ChooseTeam ปรากฏอยู่หรือไม่
-        if chooseTeamGui.Visible then
-            for _, v in pairs(getconnections(chooseTeamGui.Container.Pirates.Frame.TextButton.Activated)) do
-                pcall(function()
-                    v.Function()
-                end)
-            end
-        end
-    -- ทำซ้ำจนกว่า Player จะมีทีมและเกมโหลดเสร็จ
-    until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
-end
+getgenv().Kusnokix = {
+    ["LockedRace"] = {
+        ["Enabled"] = true,
+        ["Rerace until fragments"] = 4000,
+        ["Enable rerace until fragments"] = true,
+        ["Race"] = {
+            "Skypiea"
+        },
+        ["Reroll when evo"] = false,
+        ["Teleport to island"] = true,
+        ["PosTeleport"] = CFrame.new(100, 100, 616),
+        ["Auto Find Fragments"] = true,
+        ["Minimum Fragments"] = 30000,
+        ["Helper Skypiea"] = {},
+        ["Helper Ghoul"] = {},
+        ["Helper Auto Enbale PVP"] = true,
+        ["Helper Teleport to pos"] = true,
+        ["AutoFindPlayer"] = true
+    },
+    ["Auto Evo Race"] = true,
+    ["Fast Attack"] = {
+        ["Duration"] = 2,
+        ["Delay"] = .3
+    }
+}
+loadstring(game:HttpGet "https://raw.githubusercontent.com/Hiromabashi/loader/refs/heads/main/26a2a9cb5a0d8b04e91dbfbc08d6ac46.lua") { function(...) end, "03f1fb2f-490d-4b16-a07b-e952561e3d88", "old"}
+
 
 local HttpService = game:GetService("HttpService")
 getgenv().Key = "MARU-157L3-ANC5-XCEOG-267H-X6O3A"
