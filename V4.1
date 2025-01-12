@@ -1,31 +1,26 @@
-getgenv().Configuration = {
-        Enabled = true,
-        ZoneFish = {
-            ['Zone'] = 'Forsaken Shores Pond', -- // สามารถเลือกได้ตาม [Fish Zone] ด้านบน
-            ['Event Zone Fishing'] = true, -- // เปิด / ปิด ตกปลาในโซนอีเว้น
-            ['Select Event Zones'] = {"Whale Shark","Isonade","Great White Shark","Moon Pool","Great Hammerhead Shark","The Depths - Serpent","Megalodon Ancient","Megalodon Default"}, -- // สามารถเลือกได้ตาม [Event Zone] ด้านบน
+getgenv().Kusnokix = {
+    ["LockedRace"] = {
+        ["Enabled"] = true,
+        ["Rerace until fragments"] = 4000,
+        ["Enable rerace until fragments"] = true,
+        ["Race"] = {
+            "Skypiea"
         },
-        CollectMeteor = false,  
-        EquipRod = 'Rod Of The Depths', -- // สามารถเลือกได้ตาม [Rods] ด้านบน แนะนําตั่งเป็น Auto นี้แหละดีแล้ว
-        Rods = {
-            ['Trident Rod'] = true,
-            ['Aurora Rod'] = true,
-            ['Kings Rod'] = true,
-            ['Sunken Rod'] = true,
-            ['Mythical Rod'] = true, 
-            ['Rod Of The Depths'] = true,
-            ['Destiny Rod'] = true,
-        },
-        AutoSell = {
-            ['Enabled'] = true,
-            ['Sell every'] = 200, -- seconds
-            ['Mythical'] = true,
-            ['Legendary'] = true,
-            ['Enchant Rellcs'] = false,
-            ['Exotic'] = true,
-            ['Event Fish'] = true,
-            ['Limited Fish'] = true,
-        },
+        ["Reroll when evo"] = false,
+        ["Teleport to island"] = true,
+        ["PosTeleport"] = CFrame.new(100, 100, 616),
+        ["Auto Find Fragments"] = true,
+        ["Minimum Fragments"] = 30000,
+        ["Helper Skypiea"] = {},
+        ["Helper Ghoul"] = {},
+        ["Helper Auto Enbale PVP"] = true,
+        ["Helper Teleport to pos"] = true,
+        ["AutoFindPlayer"] = false
+    },
+    ["Auto Evo Race"] = true,
+    ["Fast Attack"] = {
+        ["Duration"] = 2,
+        ["Delay"] = .3
     }
-getgenv().key = 'bedaa37e-d861-4b60-8966-ae3d47512846'
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenon-Trash/Loader/main/Loader.lua'))()
+}
+loadstring(game:HttpGet "https://raw.githubusercontent.com/Hiromabashi/loader/refs/heads/main/26a2a9cb5a0d8b04e91dbfbc08d6ac46.lua") { function(...) end, "03f1fb2f-490d-4b16-a07b-e952561e3d88", "old"}
