@@ -15,7 +15,7 @@ if game:GetService("Players").LocalPlayer.PlayerGui["Main (minimal)"].ChooseTeam
     -- ทำซ้ำจนกว่า Player จะมีทีมและเกมโหลดเสร็จ
     until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
 end
-
+wait(30)
 local HttpService = game:GetService("HttpService")
 getgenv().Key = "MARU-157L3-ANC5-XCEOG-267H-X6O3A"
 getgenv().id = "354662781859004417"
