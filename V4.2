@@ -1,76 +1,30 @@
-_G.Settings_V4 = {
-    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-    ["InVIPServ"] = false, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
-    ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
-        "Bolt_yCvLVg",
-        "JOE_JGW3SLKFXZ"
+getgenv().Kusnokix = {
+    ["LockedRace"] = {
+        ["Enabled"] = true,
+        ["Rerace until fragments"] = 4000,
+        ["Enable rerace until fragments"] = true,
+        ["Race"] = {
+            "Cyborg"
+        },
+        ["Reroll when evo"] = false,
+        ["Teleport to island"] = true,
+        ["PosTeleport"] = CFrame.new(100, 100, 616),
+        ["Auto Find Fragments"] = true,
+        ["Minimum Fragments"] = 30000,
+        ["Helper Skypiea"] = {},
+        ["Helper Ghoul"] = {},
+        ["Helper Auto Enbale PVP"] = true,
+        ["Helper Teleport to pos"] = true,
+        ["AutoFindPlayer"] = false
     },
-    ["V4FarmList"] = {
-        "Clash_ihIo0e",
-        "Dash_JMpYEM",
-        "Dawn_VfXtis",
-        "Flare_Kxacul",
-        "Jade_zJtEg9",
-        "Leaf_7j7NbG",
-        "Pear_7JpRM7",
-        "Shore_7DJ9pi",
-        "Snow_20bFXD",
-        "Soul_f2MrQD",
-        "Soul_Va92Cj",
-        "Storm_1Bylxc",
-        "Vibe_Nss7q6",
-        "Vine_Z5GLwU",
-        "Volt_kmBDN7",
-        "Volt_WVxe72",
-        "Phyrax66860",
-        "Myloix01208",
-        "Nylvox75909",
-        "Krylor85389",
-        "Drizok65135",
-        "Zyvalk36147",
-        "Zyvorn22673",
-        "Blazir20593",
-        "Fynxor98470",
-        "Tylorn75472",
-        "Quivor01934",
-        "Lynzak06384",
-        "Loryx29955",
-        "Flazok99664",
-        "Xorvin61660",
-        "Tylorn90267",
-        "Trivor37180",
-        "Zyvolk32677",
-        "Fyzorn82160",
-        "Qryzen75458",
-        "Zarnyx59970",
-        "Blonix35860",
-        "Gryzar45486",
-        "Xyvron55914",
-        "Thynar82626",
-        "Ryvark37992",
-        "Qalvik21911",
-        "Tylvik24023",
-        "Sylvar28424",
-        "Dravix68456",
-        "Nexial70052",
-        "Prylon33376",
-        "Gryzix82307",
-        "Ryvark67149",
-        "Xarion72770",
-        "Xarnyx06574",
-        "Xorvin14117",
-        "Zarnyx94357",
-        "Fyzorn39942",
-        "Pryzan14459",
-        "Quivor44579",
-        "Fynxor24742",
-        "Slynor49950",
-        "Jynvok07288",
-        "Azzion36363"
+    ["Auto Evo Race"] = true,
+    ["Fast Attack"] = {
+        ["Duration"] = 2,
+        ["Delay"] = .3
     }
 }
+loadstring(game:HttpGet "https://raw.githubusercontent.com/Hiromabashi/loader/refs/heads/main/26a2a9cb5a0d8b04e91dbfbc08d6ac46.lua") { function(...) end, "03f1fb2f-490d-4b16-a07b-e952561e3d88", "old"}
 
-getgenv().Key = "MARU_V4-PQWHKORMJNJ7H3O"
+getgenv().Key = "MARU-157L3-ANC5-XCEOG-267H-X6O3A"
 getgenv().id = "354662781859004417"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
