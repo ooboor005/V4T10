@@ -1,24 +1,29 @@
 _G.Settings_V4 = {
-["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
-["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
-["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
+    ["LockTiers"] = 11, -- เตะตอนเทียร์เท่านั้นหรือมากกว่า ( ออโต้ปิด ระบบรีจอยในสคริปต์ ) ถ้าอยากปิด หรือตัวช่วย T10 ปรับเป็น11 / Kick when tier more than your settings ( If u not want to kick just set to 11 )
+    ["Lever"] = true, -- ออโต้ดึงคันโยก / Auto Pull Lever
+    ["InVIPServ"] = true, -- รีเซิฟให้ฟูลมูนรี / Crash when full moon end
     ["HelperNameList"] = { -- ตัวช่วยได้ 2 ตัว / Put the helper account name
-        "Hufujac02",
-        "Luyewev3468"
+        "Luyewev3468",
+        "Ziwituz0182"
     },
-    ["V4FarmList"] = { -- ตัวฟาร์มใส่ได้ 10 ตัวเผ่าไม่ซ้ำตัวช่วยพอ
-        "Nenexik6078",
-        "Lesubiz1604",
-        "Wulujig0228",
-        "Mibidil7789",
-        "Boyuvog4275",
-        "Bepotal4101",
-        "Fuzofiv5912",
-        "Fuzofiv5912",
-        "Qequjar9289",
-        "Cutihum0018"
-    }
+    ['RaceSettings'] = { -- รีเผ่า ต้องมีเงินม่วงพร้อมรีเท่านั้น
+        ["Enabled"] = false, -- เปิด/ปิด
+        ["RaceTarget"] = {"Cyborg"} -- เผ่าที่อยากให้รีได้
+    },
+    ["V4FarmList"] = {
+    "Roweh3426088",
+    "Webawus8852",
+    "Ceqof3991607",
+    "Yabub0074645",
+    "Cunetac0538",
+    "Jesixiv1185",
+    "Kucaj4479785",
+    "Kawah6806455",
+    "Yuwaq3012958",
+    "Zuzek7712786",
+
+    ["AutoFindFarmList"] = false -- ปรับเป็น true จะหาตัวฟาร์มเองโดยที่ไม่จำเป็นต้องเติมชื่อตัวฟาร์มลงใน V4FarmList แต่อาจจะฟาร์มช้าลงเพราะสุ่มตำแหน่งฟาร์ม
 }
-script_key= "FnWeztiocBqQsWkzcXafkcyoxLkugDiA";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/Loader.lua"))()
-            
+
+script_key="GOjWDoEBajyanAthekRkmWhjTXtfXQhW";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/refs/heads/main/Loader.lua"))()
